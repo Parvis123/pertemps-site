@@ -1,0 +1,26 @@
+{
+  "name": "pertemps-site",
+  "version": "1.0.0",
+  "description": "pertemps-test",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "gulp-minify": "^3.1.0",
+    "gulp-watch": "^5.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Parvis123/pertemps-site.git"
+  },
+  "author": "Michael Parvis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Parvis123/pertemps-site/issues"
+  },
+  "homepage": "https://github.com/Parvis123/pertemps-site#readme"
+}
