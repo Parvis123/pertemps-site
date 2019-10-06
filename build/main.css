@@ -30,7 +30,9 @@
 }
 
 .nav-link {
-    font-size: 10px;
+    font-size: 12.5px;
+    font-weight: 400;
+    font-family: 'Roboto';
 }
 
 /* allows usage of Roboto font */
@@ -39,12 +41,16 @@ sans-serif;
 
 
 /* from bootstrap offical documentation */
-#navbarContent {
+#navbar-content {
     flex-grow: 0 !important;
 }
 
-.pertempsImage {
+.pertemps-image {
     width: 7rem;
+}
+
+.navbar-brand {
+    padding-left: 120px;
 }
 
 /* !important to override the bootstrap css */
@@ -55,24 +61,21 @@ nav .navbar-collapse .navbar-nav li a {
 
 
 nav,
-#navbarContent {
+#navbar-content {
     max-width: 1800px;
     /*      border:solid 1px black;*/
 }
 
 /* text in image goes here  */
 
-.imageText {
-  color:white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -400%);
+.image-text {
+    color: white;
+    max-width: 350px;
 }
 
 /* gets the image in the background and allows it to be relative */
 
-.imageContainer {
+.image-container {
     max-width: 100vw;
     height: 30rem;
     max-height: 350px;
@@ -83,18 +86,36 @@ nav,
     background-position: center center;
     /*  background: linear-gradient(to bottom, white 10%, white 30%, white 60%, white 100%);
   opacity: .5;*/
-    border-bottom: #ffffff 2px
-    positiion: relative;
+    border-bottom: #ffffff 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
 }
 
+/* h1 tag banner text for image */
+
+/*.imageText>h1 {
+  max-width
+}
+*/
 /* uses box-shadow for gradient effect */
+.intense-shadow {
+    width: 100%;
+    /*        height: 300px;
+      background-color: red;*/
+    -webkit-box-shadow: 0px -37px 108px 65px rgba(255, 255, 255, 0.97);
+    -moz-box-shadow: 0px -37px 108px 65px rgba(255, 255, 255, 0.97);
+    box-shadow: 0px -37px 108px 65px rgba(255, 255, 255, 0.97);
+    /* https://www.cssmatic.com/box-shadow -- for reference / updating shadow. */
+
+}
 
 .shadow {
     width: 100%;
-    /*    height: 300px;*/
-    /*  background-color: red;*/
-
+    /*        height: 300px;
+      background-color: red;*/
     -webkit-box-shadow: 0px -37px 108px 65px rgba(255, 255, 255, 0.97);
     -moz-box-shadow: 0px -37px 108px 65px rgba(255, 255, 255, 0.97);
     box-shadow: 0px -37px 108px 65px rgba(255, 255, 255, 0.97);
@@ -115,39 +136,72 @@ box-shadow: 0px -5px 15px 6px rgba(250,250,250,1);
 
 /* card positioning / card box-shadow / bottom border showing & colour */
 
-.card {
-    width: 100%;
-    margin-top: 10px;
-    margin: 10px;
-    border: solid 1px gray;
-    -webkit-box-shadow: -2px 3px 10px 1px rgba(0, 0, 0, 0.44);
-    -moz-box-shadow: -2px 3px 10px 1px rgba(0, 0, 0, 0.44);
-    box-shadow: -2px 3px 10px 1px rgba(0, 0, 0, 0.44);
 
+.card {
+    width: 20rem;
+    margin: 20px 10px 10px 10px;
+    border: solid 0.5px #A0A0A0;
+    -webkit-box-shadow: -10px 10px 29px -13px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: -10px 10px 29px -13px rgba(0, 0, 0, 0.3);
+    box-shadow: -10px 10px 29px -13px rgba(0, 0, 0, 0.3);
+    height: 20rem;
 }
 
 .card-title {
+    text-align: center;
+    white-space: initial;
     font-family: 'Roboto';
     font-weight: 500;
+    font-size: 1.51rem;
+    padding-bottom: 5px;
 }
 
 .card-right {
-    border-bottom: solid 1px blue;
-    padding-bottom: 10px;
+    border-bottom: blue 1px solid;
 }
 
 .card-mid {
-    border-bottom: solid 1px green;
-    padding-bottom: 10px;
-
+    border-bottom: green 1px solid;
 }
 
 .card-left {
-    border-bottom: solid 1px red;
-    padding-bottom: 10px;
+    border-bottom: red 1px solid;
+}
+
+.card-text {
+    margin-bottom: 0.5rem;
+}
+
+.card-heading {
+    min-height: 5rem;
+    margin-bottom: 1rem;
+}
+
+.btn.btn-primary,
+.card-text {
+    font-size: 0.75rem;
+    font-family: 'Roboto';
+    font-weight: 400;
 }
 
 
+.nav-item {
+    padding: 5px 20px;
+    margin: 5px 0px;
+}
+
+
+.nav-link:hover {
+    border-bottom: 1px solid black;
+    margin-bottom: -1px;
+}
+
+.row.card-row {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+}
 
 
 
@@ -156,7 +210,7 @@ box-shadow: 0px -5px 15px 6px rgba(250,250,250,1);
 
     /*specificity of nav element and important value needed to override bootstrap class*/
     nav,
-    #navbarContent {
+    #navbar-content {
         justify-content: space-around !important;
     }
 }

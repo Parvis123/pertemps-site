@@ -18,17 +18,17 @@
 
 <body>
     <!-- Navbar and Logo Container -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white navContainer">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <!-- Pertemps logo in top left -->
         <a class="navbar-brand" href="#">
-            <img src="assets/logo.jpg" alt="Pertemps Logo" class="pertempsImage" />
+            <img src="assets/logo.jpg" alt="Pertemps Logo" class="pertemps-image" />
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse sticky-top" id="navbarContent">
+        <div class="collapse navbar-collapse sticky-top" id="navbar-content">
             <ul class="navbar-nav">
-                <li class="nav-item test">
+                <li class="nav-item">
                     <a class="nav-link" href="#">Find a Job</a>
                 </li>
                 <li class="nav-item">
@@ -49,63 +49,75 @@
             </ul>
         </div>
     </nav>
-    <div class="imageContainer">
-        <div class="imageText"><h1>Pertemps the face of recruitment</h1></div>
+    <div class="image-container">
+        <div class="image-text">
+            <h1>Pertemps the face of recruitment</h1>
+        </div>
     </div>
     <!--   <div class="cardFeather"></div> needed for css properties, currently disabled as not useful/working well -->
+    <div class="intense-shadow">
+    </div>
     <div class="shadow">
     </div>
     <!-- Cards Container -->
-    <div class="row">
-        <div class="col-sm-4">
-            <div class="card">
-                <div class="card-body">
-                    <h3 class="card-title card-left">Care Assistant - Full Time</h3>
-                    <p class="card-text"><i class="fas fa-money-bill"></i> Paid Mileage 35p per Mile.</p>
-                    <p class="card-text"><i class="fas fa-car"></i> Full Training is provided.</p>
-                    <p class="card-text"><i class="fas fa-suitcase"></i> Paid Holidays.</p>
-                    <p class="card-text"><i class="fas fa-umbrella-beach"></i> 0700-1400 / 1600-2200 Shift patterns.</p>
-                    <p class="card-text"><i class="fas fa-clock"></i> Enhanced pay for bank holidays.</p>
-                    <p class="card-text"><i class="fas fa-phone"></i> Up to £14ph.</p>
-                    <div class="text-center">
-                        <a href="#" class="btn btn-primary pull-right">Find out more</a>
+    <main>
+        <div class="row card-row">
+            <div class="col-xs-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-heading card-left">
+                            <h3 class="card-title">Care Assistant - Full Time</h3>
+                        </div>
+                        <p class="card-text"><i class="fas fa-money-bill"></i> Paid Mileage 35p per Mile.</p>
+                        <p class="card-text"><i class="fas fa-car"></i> Full Training is provided.</p>
+                        <p class="card-text"><i class="fas fa-suitcase"></i> Paid Holidays.</p>
+                        <p class="card-text"><i class="fas fa-umbrella-beach"></i> 0700-1400 / 1600-2200 Shift patterns.</p>
+                        <p class="card-text"><i class="fas fa-clock"></i> Enhanced pay for bank holidays.</p>
+                        <p class="card-text"><i class="fas fa-phone"></i> Up to £14ph.</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary">Find out more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-heading card-mid">
+                            <h3 class="card-title">Care Assistant - Part Time</h3>
+                        </div>
+                        <p class="card-text"><i class="fas fa-money-bill"></i> Paid Mileage 35p per Mile.</p>
+                        <p class="card-text"><i class="fas fa-car"></i> Full Training is provided.</p>
+                        <p class="card-text"><i class="fas fa-suitcase"></i> Paid Holidays.</p>
+                        <p class="card-text"><i class="fas fa-umbrella-beach"></i> 0700-1400 / 1600-2200 Shift patterns.</p>
+                        <p class="card-text"><i class="fas fa-clock"></i> Enhanced pay for bank holidays.</p>
+                        <p class="card-text"><i class="fas fa-phone"></i> Up to £14ph.</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary">Find out more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-heading card-right">
+                            <h3 class="card-title">Care Assistant - Weekends</h3>
+                        </div>
+                        <p class="card-text"><i class="fas fa-money-bill"></i> Paid Mileage 35p per Mile.</p>
+                        <p class="card-text"><i class="fas fa-car"></i> Full Training is provided.</p>
+                        <p class="card-text"><i class="fas fa-suitcase"></i> Paid Holidays.</p>
+                        <p class="card-text"><i class="fas fa-umbrella-beach"></i> 0700-1400 / 1600-2200 Shift patterns.</p>
+                        <p class="card-text"><i class="fas fa-clock"></i> Enhanced pay for bank holidays.</p>
+                        <p class="card-text"><i class="fas fa-phone"></i> Up to £14ph.</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary">Find out more</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-sm-4">
-            <div class="card">
-                <div class="card-body">
-                    <h3 class="card-title card-mid">Care Assistant - Part Time</h3>
-                    <p class="card-text"><i class="fas fa-money-bill"></i> Paid Mileage 35p per Mile.</p>
-                    <p class="card-text"><i class="fas fa-car"></i> Full Training is provided.</p>
-                    <p class="card-text"><i class="fas fa-suitcase"></i> Paid Holidays.</p>
-                    <p class="card-text"><i class="fas fa-umbrella-beach"></i> 0700-1400 / 1600-2200 Shift patterns.</p>
-                    <p class="card-text"><i class="fas fa-clock"></i> Enhanced pay for bank holidays.</p>
-                    <p class="card-text"><i class="fas fa-phone"></i> Up to £14ph.</p>
-                    <div class="text-center">
-                        <a href="#" class="btn btn-primary pull-right">Find out more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="card">
-                <div class="card-body">
-                    <h3 class="card-title card-right">Care Assistant - Weekends</h3>
-                    <p class="card-text"><i class="fas fa-money-bill"></i> Paid Mileage 35p per Mile.</p>
-                    <p class="card-text"><i class="fas fa-car"></i> Full Training is provided.</p>
-                    <p class="card-text"><i class="fas fa-suitcase"></i> Paid Holidays.</p>
-                    <p class="card-text"><i class="fas fa-umbrella-beach"></i> 0700-1400 / 1600-2200 Shift patterns.</p>
-                    <p class="card-text"><i class="fas fa-clock"></i> Enhanced pay for bank holidays.</p>
-                    <p class="card-text"><i class="fas fa-phone"></i> Up to £14ph.</p>
-                    <div class="text-center">
-                        <a href="#" class="btn btn-primary pull-right">Find out more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </main>
     <!-- Image background with white text -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
