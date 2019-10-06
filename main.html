@@ -1,67 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <!-- custom/manual css Link -->
     <link rel="stylesheet" type="text/css" href="main.css">
-
+    <!-- Roboto Font link -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Font Awesome Link -->
+    <script src="https://kit.fontawesome.com/0accb1a14c.js" crossorigin="anonymous"></script>
     <title>Pertemps</title>
-  </head>
-  <body>
+</head>
 
-                                         <!-- Navbar and Logo Container -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white navContainer"> <!--  -->
-        <a class="navbar-brand" href="#"> 
-          <img src="assets/logo.jpg" alt="Pertemps Logo" class="pertempsImage" />
+<body>
+    <!-- Navbar and Logo Container -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white navContainer">
+        <!-- Pertemps logo in top left -->
+        <a class="navbar-brand" href="#">
+            <img src="assets/logo.jpg" alt="Pertemps Logo" class="pertempsImage" />
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarContent">
-          <ul class="navbar-nav">
-            <li class="nav-item test">
-              <a class="nav-link" href="#">Find a Job</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Saved Jobs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Article Examples</a>
-            </li> 
-            <li class="nav-item">
-              <a class="nav-link" href="#">Functionality</a>
-            </li> 
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Multiple</a>
-            </li>       
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Single</a>
-            </li>                                         
-          </ul>  
+        <div class="collapse navbar-collapse sticky-top" id="navbarContent">
+            <ul class="navbar-nav">
+                <li class="nav-item test">
+                    <a class="nav-link" href="#">Find a Job</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Saved Jobs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Article Examples</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Functionality</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Multiple</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Single</a>
+                </li>
+            </ul>
         </div>
-    </nav>  
-
-       <div class="imageContainer"> 
-
-          <!-- <img class ="img-fluid" src="assets/background.jpg" alt="Pertemps background image"> -->
+    </nav>
+    <div class="imageContainer">
+        <div class="imageText"><h1>Pertemps the face of recruitment</h1></div>
+    </div>
+    <!--   <div class="cardFeather"></div> needed for css properties, currently disabled as not useful/working well -->
+    <div class="shadow">
+    </div>
+    <!-- Cards Container -->
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title card-left">Care Assistant - Full Time</h3>
+                    <p class="card-text"><i class="fas fa-money-bill"></i> Paid Mileage 35p per Mile.</p>
+                    <p class="card-text"><i class="fas fa-car"></i> Full Training is provided.</p>
+                    <p class="card-text"><i class="fas fa-suitcase"></i> Paid Holidays.</p>
+                    <p class="card-text"><i class="fas fa-umbrella-beach"></i> 0700-1400 / 1600-2200 Shift patterns.</p>
+                    <p class="card-text"><i class="fas fa-clock"></i> Enhanced pay for bank holidays.</p>
+                    <p class="card-text"><i class="fas fa-phone"></i> Up to £14ph.</p>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-primary pull-right">Find out more</a>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="cardFeather"></div>
-
-        <div class="cardContainer">
-          cards go here
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title card-mid">Care Assistant - Part Time</h3>
+                    <p class="card-text"><i class="fas fa-money-bill"></i> Paid Mileage 35p per Mile.</p>
+                    <p class="card-text"><i class="fas fa-car"></i> Full Training is provided.</p>
+                    <p class="card-text"><i class="fas fa-suitcase"></i> Paid Holidays.</p>
+                    <p class="card-text"><i class="fas fa-umbrella-beach"></i> 0700-1400 / 1600-2200 Shift patterns.</p>
+                    <p class="card-text"><i class="fas fa-clock"></i> Enhanced pay for bank holidays.</p>
+                    <p class="card-text"><i class="fas fa-phone"></i> Up to £14ph.</p>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-primary pull-right">Find out more</a>
+                    </div>
+                </div>
+            </div>
         </div>
-
-                                                <!-- Image background with white text -->
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title card-right">Care Assistant - Weekends</h3>
+                    <p class="card-text"><i class="fas fa-money-bill"></i> Paid Mileage 35p per Mile.</p>
+                    <p class="card-text"><i class="fas fa-car"></i> Full Training is provided.</p>
+                    <p class="card-text"><i class="fas fa-suitcase"></i> Paid Holidays.</p>
+                    <p class="card-text"><i class="fas fa-umbrella-beach"></i> 0700-1400 / 1600-2200 Shift patterns.</p>
+                    <p class="card-text"><i class="fas fa-clock"></i> Enhanced pay for bank holidays.</p>
+                    <p class="card-text"><i class="fas fa-phone"></i> Up to £14ph.</p>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-primary pull-right">Find out more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Image background with white text -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+</body>
+
 </html>
