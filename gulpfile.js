@@ -1,12 +1,13 @@
-const minify = require('gulp-minify');
-
 var gulp = require('gulp'),
     watch = require('gulp-watch');
 
-gulp.task('compress', function() {
-    gulp.src(['lib/*.js', 'lib/*.mjs'])
-        .pipe(minify())
-        .pipe(gulp.dest('dist'))
+let cleanCSS = require('gulp-clean-css');
+
+
+gulp.task('minify-css', () => {
+  return gulp.src('build/*.css')
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(gulp.dest('build'));
 });
 
 gulp.task('stream', function() {
