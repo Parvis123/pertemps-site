@@ -1,4 +1,4 @@
-/* ORIGINAL CSS FILE BEFORE MINIFY/CLEAN CSS */
+/* ORIGINAL CSS FILE BEFORE MINIFY/CLEAN CSS, (LOCATED IN BUILD/MAIN.CSS) */
 :root {
     --blue: #007bff;
     --indigo: #6610f2;
@@ -38,6 +38,7 @@
 
 
 /* allows usage of Roboto font */
+
 font-family: 'Roboto',
 sans-serif;
 
@@ -60,9 +61,9 @@ sans-serif;
 }
 
 /* !important to override the bootstrap css, so we get specific with selectors */
+
 nav .navbar-collapse .navbar-nav li a {
     color: var(--dark) !important;
-
 }
 
 
@@ -80,6 +81,7 @@ nav,
 
 /* when hovering over an anchor tag, 1px is formed by the border appearing, but we take away 
    a pixel from the margin to counteract this, making next gain of pixels on the div 0. */
+
 .nav-link:hover {
     border-bottom: 1px solid black;
     margin-bottom: -1px;
@@ -114,8 +116,6 @@ nav,
 /* uses box-shadow for gradient effect */
 .intense-shadow {
     width: 100%;
-    /*        height: 300px;
-      background-color: red;*/
     -webkit-box-shadow: 0px -20px 1000px 90px rgba(255, 255, 255, 0.97);
     -moz-box-shadow: 0px -20px 1000px 90px rgba(255, 255, 255, 0.97);
     box-shadow: 0px -20px 1000px 90px rgba(255, 255, 255, 0.97);

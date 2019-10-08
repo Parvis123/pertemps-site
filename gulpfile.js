@@ -5,9 +5,9 @@ let cleanCSS = require('gulp-clean-css');
 
 
 gulp.task('minify-css', () => {
-  return gulp.src('build/*.css')
-    .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(gulp.dest('build'));
+    return gulp.src('main.css')
+        .pipe(cleanCSS({ compatibility: 'ie8' }))
+        .pipe(gulp.dest('build/minify-css'));
 });
 
 gulp.task('stream', function() {
